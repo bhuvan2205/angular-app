@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Products Data is coming from api</h1>
+  <ul class="product-list">
+    <li *ngFor="let product of products">
+      <div class="product">
+        <div>
+          <h3>{{ product.title }}</h3>
+          <p>{{ product.description }}</p>
+            <span>Price: ${{ product.price }}</span>
+            <span>Rating: {{ product.rating }}</span>
+            <button><a routerLink="/product/{{product.id}}">Learn More</a> </button>
+        </div>
+        <img src="{{ product.images[0] }}" alt="" />
+      </div>
+    </li>
+  </ul>
+</div>

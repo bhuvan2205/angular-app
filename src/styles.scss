@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: system-ui;
+    background: #f0f0f0;
+    color: #0f0f0f;
+}
+
+nav + div{
+    padding-top: 50px;
+}
