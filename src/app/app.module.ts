@@ -18,10 +18,12 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ApiComponent } from './components/api/api.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ProductComponent } from './components/product/product.component';
+import { SignupComponent } from './components/signup/signup.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'about', component: AboutComponent },
+  { path: 'signup', component: SignupComponent },
   { path: 'login', component: LoginComponent },
   { path: 'products', component: ApiComponent },
   { path: 'product/:id', component: ProductComponent },
@@ -40,6 +42,7 @@ const routes: Routes = [
     NotFoundComponent,
     ApiComponent,
     ProductComponent,
+    SignupComponent,
   ],
   imports: [
     FormsModule,

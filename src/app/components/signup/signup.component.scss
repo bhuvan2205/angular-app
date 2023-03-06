@@ -1,0 +1,32 @@
+form{
+    display: flex;
+    width: 60%;
+    margin: 50px auto;
+    flex-direction: column;
+    max-width: 600px;
+    padding: 50px;
+    h2{
+        text-align: center;
+        font-size: 2.5rem;
+    }
+    input{
+        margin: 20px 0;
+        padding: 20px;
+        outline: none;
+        border: none;
+    }
+    button{
+        margin: 20px 0;
+        padding: 20px;
+        font-size: 1rem;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        background: #dc143c;
+        border-radius: 5px;
+        color: #fff;
+        &:hover{
+            background: #cb032b;
+        }
+    }
+}
